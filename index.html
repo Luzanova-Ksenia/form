@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="/signup" method="POST">
+        <h1 style="color:#3A0054; text-align: center">Регистрация нового участника</h1>
+        <p style="text-align: right">Уже есть аккаунт?<a href="#">Войти</a></p>
+        <h2 style="color:#34495E; text-align: center">Пожалуйста, заполните эту форму, чтобы создать учетную запись.</h2>
+        <hr color="#000000;">
+        <p style="text-align: center">
+            <label style="color:#145A32;"><b>ФИО</b></label>
+            <input type="text" name="full_name" size="50" placeholder="Введите ФИО" required>
+            <label style="color:#145A32;"><b>Телефон</b></label>
+            <input type="tel" name="phone" size="30" placeholder="Введите номер телефона" required>
+            <label style="color:#145A32;"><b>Email</b></label>
+            <input type="email" name="email" size="30" placeholder="Введите email" required>
+        </p>
+        <p style="text-align: center;">
+            <label style="color:#145A32;"><b>Пароль</b></label>
+            <input type="password" name="password" maxlength="12" placeholder="Введите пароль" required> 
+            <label style="color:#145A32;"><b>Подтвердите пароль</b></label>
+            <input type="password" name="password_confirm" maxlength="12" placeholder="Повторите пароль" required>
+        </p>
+        <hr>
+        <p style="text-align: center">
+            <label style="color:#145A32;"><b>Как часто совершаете покупки в интернете?</b></label>
+        </p>
+        <p style="text-align: center">
+            <input type="radio" name="term" value="rarely" required>Редко, по необхоимости.
+            <input type="radio" name="term" value="often" required>Часто пользуюсь интернет-магазинами.
+            <input type="radio" name="term" value="always" required>Всегда заказываю все онлайн.
+        </p>
+        <hr>
+        <p style="color:#145A32; text-align: center"><b>Расскажите о последней крупной покупке, совершенной онлайн.</b></p>
+        <p style="text-align: center"><textarea rows="5" cols="50" name="text" placeholder="Введите текст" required></textarea></p>
+        <p style="text-align: center">
+            <button type="submit" name="submit_button" value="main_button"><b>Отправить</b></button>
+            <button type="reset">Отмена</button>
+        </p>
+    </form>
+</body>
+</html>
