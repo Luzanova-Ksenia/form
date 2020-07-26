@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Форма регистрации</title>
 </head>
 <body>
     <form action="/signup" method="POST">
@@ -26,9 +26,7 @@
             <input type="password" name="password_confirm" maxlength="12" placeholder="Повторите пароль" required>
         </p>
         <hr>
-        <p style="text-align: center">
-            <label style="color:#145A32;"><b>Как часто совершаете покупки в интернете?</b></label>
-        </p>
+        <p style="color:#145A32; text-align: center"><b>Как часто совершаете покупки в интернете?</b></p>
         <p style="text-align: center">
             <input type="radio" name="term" value="rarely" required>Редко, по необхоимости.
             <input type="radio" name="term" value="often" required>Часто пользуюсь интернет-магазинами.
@@ -36,12 +34,12 @@
         </p>
         <hr>
         <p style="color:#145A32; text-align: center"><b>Расскажите о последней крупной покупке, совершенной онлайн.</b></p>
-        <p style="text-align: center"><textarea rows="5" cols="50" name="text" placeholder="Введите текст" required></textarea></p>
+        <textarea rows="3" cols="190" name="text" placeholder="Введите текст" required></textarea>
         <hr>
-        <p style="text-align: center">
+        <div style="text-align: center">
             <button type="submit" name="submit_button" value="main_button"><b>Отправить</b></button>
             <button type="reset">Отмена</button>
-        </p>
+        </div>
     </form>
 </body>
 </html>
